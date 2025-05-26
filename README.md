@@ -1,12 +1,12 @@
 # Business-Insights-360
 
-#PROJECT OVERVIEW
+# PROJECT OVERVIEW
 
 AtliQ Hardware has experienced significant growth in recent years and is now taking a strategic step toward implementing data analytics using Power BI for the first time. 
 This initiative aims to provide stakeholders with valuable insights across key business functions such as finance, sales, marketing, and supply chain. 
 By leveraging data-driven decision-making, the company seeks to gain a competitive edge in the market and drive continued success.
 
-##Tech Stack
+## Tech Stack
 1. SQL – For querying and managing data
 
 2. Power BI Desktop – Core tool for data visualization and report development
@@ -19,7 +19,7 @@ By leveraging data-driven decision-making, the company seeks to gain a competiti
 
 6. Project Charter Document – Guiding the project scope and objectives.
 
-##Power BI Techniques Learned
+## Power BI Techniques Learned
 1. Framing the right questions before initiating a project
 
 2. Creating calculated columns to enrich datasets
@@ -54,7 +54,7 @@ By leveraging data-driven decision-making, the company seeks to gain a competiti
 
 17. Managing collaboration, workspace organization, and user access in Power BI Service.
 
-##Key Business Terms
+## Key Business Terms
 1. Gross Price
 
 2. Pre-Invoice Deductions
@@ -83,23 +83,23 @@ By leveraging data-driven decision-making, the company seeks to gain a competiti
 
 14. Consumers
 
-##Company Background
+## Company Background
 AtliQ Hardware is a rapidly expanding global company that specializes in selling computers and computer accessories. It operates through three main channels: retailers, direct sales, and distributors.
 
 Despite its growth, the company recently experienced unexpected losses after launching a store in America based solely on surveys, intuition, and basic Excel analysis. Meanwhile, competitors with well-established analytics teams have been leveraging data to make informed strategic decisions.
 
 To stay competitive and avoid similar missteps in the future, AtliQ Hardware has recognized the urgent need to build a robust data analytics capability. By adopting tools like Power BI and focusing on data-driven decision-making, the company aims to gain deeper insights into its operations and improve business outcomes.
 
-#Dataset Understanding
+# Dataset Understanding
 Before diving into analysis, it's crucial to first understand the structure and content of the data. A clear grasp of the available datasets will help guide meaningful insights and improve the overall quality of analysis.
 
-##Types of Tables
+## Types of Tables
 Dimension Tables: Contain static, descriptive information such as customer details, market regions, and product specifications.
 
 Fact Tables: Store transactional data, such as sales and forecasts, which are used for quantitative analysis.
 
-##Database: gdb041
-###dim_customer
+## Database: gdb041
+### dim_customer
 
 - Covers 27 distinct markets (e.g., India, USA, Spain)
 
@@ -119,7 +119,7 @@ Fact Tables: Store transactional data, such as sales and forecasts, which are us
 
      3. Distributor
 
-###dim_market
+### dim_market
 
 - Represents 27 distinct markets
 
@@ -135,7 +135,7 @@ Fact Tables: Store transactional data, such as sales and forecasts, which are us
 
 - Unassigned/Unknown (nan)
 
-###dim_product
+### dim_product
 
 - Organized by divisions:
 
@@ -149,7 +149,7 @@ Fact Tables: Store transactional data, such as sales and forecasts, which are us
 
 - Includes multiple product variants for each category
 
-###fact_forecast_monthly
+### fact_forecast_monthly
 
 - Provides monthly customer demand forecasts
 
@@ -171,31 +171,31 @@ Similar structure to fact_forecast_monthly
 
 The final column shows actual sold quantities
 
-##Database: gdb056
-###freight_cost
+## Database: gdb056
+### freight_cost
 
 - Contains logistics costs for each market by fiscal year
 
-###gross_price
+### gross_price
 
 - Lists gross product prices, identified by product code
 
-###manufacturing_cost
+### manufacturing_cost
 
 - Records product manufacturing costs by year and product code
 
-###pre_invoice_deductions
+### pre_invoice_deductions
 
 - Details pre-invoice deduction percentages per customer and year
 
-###post_invoice_deductions
+### post_invoice_deductions
 
 - Includes information about post-invoice and additional deductions
 
 ## Importing Data into Power BI
 - Since the project utilizes a MySQL database, data is imported into Power BI by connecting directly to the MySQL server using valid database credentials.
 
-###Data Modeling
+### Data Modeling
 1. Data modeling is a foundational step in Power BI development. A well-designed model ensures optimal performance and meaningful visualizations.
 
 2. All report visuals are built on top of this model.
@@ -207,4 +207,5 @@ The final column shows actual sold quantities
 5. Inaccurate insights
 
 6. Difficulty in maintaining the dashboard
+
 
